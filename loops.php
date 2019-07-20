@@ -36,4 +36,22 @@
 
 // while($i < 15);
 
+#Foreach ( Meant to work with arrays)
+#Indexed
+// $golfPlayers = ['Tiger', 'Stenson', 'Noren', 'Spieth'];
+
+// foreach($golfPlayers as $golfPlayer){
+//     echo $golfPlayer;
+//     echo '<br>';
+// }
+
+#Associative
+$golfPlayers = ['Tiger' => 10, 'Stenson' => 30, 'Noren' => 15, 'Spieth' => 8];
+
+foreach($golfPlayers as $golfPlayer => $worldRanking){
+    echo $golfPlayer . ': ' . $worldRanking;
+    echo '<br>';
+}
+
+
 ?>
