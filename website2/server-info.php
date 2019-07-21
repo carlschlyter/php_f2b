@@ -15,14 +15,14 @@
 
 //   echo $server['Document Root'];
 // print_r($server);
-var_dump($server);
+// var_dump($server);
 
 $client = [
     'Client System' => $_SERVER['HTTP_USER_AGENT'],
     'Client IP' => $_SERVER['REMOTE_ADDR'],
-    
+    'Remote port' => $_SERVER['REMOTE_PORT']
 ];
 
-var_dump($client);
+// var_dump($client);
 
 ?>
