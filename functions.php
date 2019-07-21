@@ -25,7 +25,7 @@ function addNumber($no1, $no2, $no3){
 
 // echo addNumber(4, 4, 4);
 
-//By reference
+//By reference 
 $myNumber = 10;
 
 function addFive(&$num){
