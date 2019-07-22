@@ -1,21 +1,32 @@
 <?php
-//   if (isset($_GET['name'])){
-//     $name = htmlentities($_GET['name']) . '<br>';
-//     $email = htmlentities($_GET['email']);
-//     echo $name;
-//     echo $email;
+  if (isset($_GET['name'])){
+    $name = htmlentities($_GET['name']);
+    // $email = htmlentities($_GET['email']);
+    // echo $name;
+    // echo $email;
+    // print_r($_GET);
+    // var_dump($_GET);
+  }
+
+//   if (isset($_POST['name'])){
+//     $name = htmlentities($_POST['name']);
+//     $email = htmlentities($_POST['email']);
 //     // print_r($_GET);
-//     // var_dump($_GET);
+//     // var_dump($_POST);
+//     echo $name . '<br>';
+//     echo $email;
 //   }
 
-  if (isset($_POST['name'])){
-    $name = htmlentities($_POST['name']);
-    $email = htmlentities($_POST['email']);
-    // print_r($_GET);
-    // var_dump($_POST);
-    echo $name . '<br>';
-    echo $email;
-  }
+//   if (isset($_REQUEST['name'])){
+//     $name = htmlentities($_REQUEST['name']);
+//     $email = htmlentities($_REQUEST['email']);
+//     print_r($_REQUEST);
+//     // var_dump($_POST);
+//     echo $name . '<br>';
+//     echo $email;
+//   }  
+
+// echo $_SERVER['QUERY_STRING'];
 
 ?>
 
@@ -39,5 +50,14 @@
     </div>  
     <input type="submit" value="Submit">
   </form>
+  <ul>
+    <li>
+      <a href="get_post.php?name=Carl">Carl</a>
+    </li>
+    <li>
+      <a href="get_post.php?name=Mia">Mia</a>
+    </li>
+  </ul>
+  <?php echo "{$name}'s profile"; ?>
 </body>
 </html>
