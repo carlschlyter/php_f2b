@@ -1,8 +1,11 @@
 <?php
 session_start();
 
-$name = $_SESSION['name'];
-$email = $_SESSION['email'];
+print_r($_SESSION);
+
+$name = isset($_SESSION['name']) ? $_SESSION['name'] : 'Guest';
+$email = isset($_SESSION['email']) ? $_SESSION['email'] : 'Not subscribed';
+
 ?>
 
 <!DOCTYPE html>
