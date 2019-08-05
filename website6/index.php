@@ -13,7 +13,14 @@
 
         } else {
             //Ajax request
-            
+            let xmlhttp = new XMLhttpRequest();
+            xmlhttp.onreadystatechange = function(){
+                if(this.onreadyState == 4 && this.status == 200){
+                    document.getElementById('output').innerHTML = this.responseText;
+                }
+            }
+            xmlhttp.open("GET", "suggest.php?q" + str, true);
+            xmlhttp.send();
         }
     }    
     </script>
@@ -24,7 +31,7 @@
         <form>
             Search user: <input type="text" class="form-control" onkeyup="showSuggestion(this.value)">
         </form>
-        <p>Suggestion: <span id="output" style="font-wight:bold"></span></p>
+        <p>Suggestion: <span id="output" style="font-weight:bold"></span></p>
     </div>
     
 </body>
