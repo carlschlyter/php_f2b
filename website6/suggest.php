@@ -1,9 +1,9 @@
 <?php
 
-$brommaFriends[] = 'Bunne';
-$brommaFriends[] = 'Birgitta';
-$brommaFriends[] = 'Hasse';
-$brommaFriends[] = 'Titti';
+$brommaFriends[] = "Bunne";
+$brommaFriends[] = "Birgitta";
+$brommaFriends[] = "Hasse";
+$brommaFriends[] = "Titti";
 $brommaFriends[] = 'Mannen';
 $brommaFriends[] = 'Gugge';
 $brommaFriends[] = 'Klas';
@@ -12,13 +12,14 @@ $brommaFriends[] = 'Johan';
 $brommaFriends[] = 'My';
 $brommaFriends[] = 'Anders';
 $brommaFriends[] = 'Karolina';
+$brommaFriends[] = 'Jonas';
 
 //Get query string
 $q = $_REQUEST['q'];
 
 $suggestion =  "";
 
-// Get suggestion
+// Get suggestions
 if($q !== ""){
     $q = strtolower($q);
     $len = strlen($q);
